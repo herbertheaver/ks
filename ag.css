@@ -1,0 +1,91 @@
+html { height: 100%; }
+body { margin: 0; text-align: left; font-family: Arial, Geneva, Helvetica, Swiss, sans-serif; line-height: 140%; color: #ffffff; padding: 4em 5em 3em 5em;
+    background: #000000;
+    background-image: url("tile.jpg");
+    background-repeat: repeat;
+}
+
+h1 { font-weight: bold;
+    text-align: center;
+    font-size: 5vw;
+    animation-duration: 2s;
+    animation-name: xScale;
+    animation-timing-function: cubic-bezier(.71,.55,.62,1.57);
+}
+
+h1:hover {font-size: 6vw;}
+
+.h1_position { position: absolute; bottom: 65%; width: 85%; margin-left: auto; margin-right: auto; z-index: 1; }
+
+.h1_position p { text-align: center; font-weight: bold;
+	letter-spacing: 0.7em;
+    font-size: 1.5vw;
+    animation-name: pFadeIn;
+    animation-duration: 10s;
+}
+
+img { border: 0; }
+a img { outline: none; }
+a:link { color: #7777ff; text-decoration: underline }
+a:active { color: #770000; text-decoration: none; background-color: #0000ff }
+a:visited { color: #7777ff; text-decoration: underline }
+a:hover { color: #000000; text-decoration: underline overline; background-color: #3333ff }
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 90%;
+}
+
+.my_code { font-family: Consolas, "Liberation Mono", FreeMono, OCR, "OCR A Extended", "Lucida Sans Typewriter", "Courier New", Courier, monospace; }
+
+.btm { position: absolute; bottom: 5%; width: 85%; margin-left: auto; margin-right: auto; }
+.btm p {opacity: .5; }
+.btm p:hover {opacity: 1; }
+
+.badge { float: right; text-align: right; }
+.badge img { opacity: .2; }
+.badge img:hover { opacity: 1; }
+.badge a img { outline: none; }
+.badge a:link, .badge a:active, .badge a:visited, .badge a:hover{ color: rgba(0, 0, 0, 0); background-color: rgba(0, 0, 0, 0); text-decoration: none }
+
+
+@keyframes SolidChange {
+  0%, 100% {
+     background-color:  #000000;
+     color: #ffffff;
+  }
+  25% {
+     background-color: #440000;
+     color: #cccc00;
+  }
+  50% {
+     background-color: #000000;
+     color: #111111;
+  }
+  75% {
+     background-color: #000044;
+	 color: #000099
+  }
+}
+
+@keyframes xScale {
+    from {
+        opacity: 0;
+        transform: scale(.3, .3);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1, 1);
+    }
+}
+
+@keyframes pFadeIn {
+	0%, 25% {
+        opacity: 0;
+	}
+	100% {
+        opacity: 1;
+	}
+}
