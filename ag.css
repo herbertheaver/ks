@@ -24,6 +24,15 @@ h1:hover {font-size: 6vw;}
     animation-duration: 10s;
 }
 
+div.countdown {
+    left:0;
+    width:80%;
+    height:0;
+    position:relative;
+    padding-bottom:25%;
+    margin:0 auto
+}
+
 img { border: 0; }
 a img { outline: none; }
 a:link { color: #7777ff; text-decoration: underline }
