@@ -1,5 +1,5 @@
 html { height: 100%; }
-body { margin: 0; text-align: left; font-family: Arial, Geneva, Helvetica, Swiss, sans-serif; line-height: 140%; color: #ffffff; padding: 4em 5em 3em 5em;
+body { margin: 0; text-align: left; font-family: Arial, Geneva, Helvetica, Swiss, sans-serif; line-height: 150%; color: #ffffff; padding: 4em 5em 3em 5em;
     background: #000000;
     background-image: url("tile.jpg");
     background-repeat: repeat;
@@ -18,11 +18,17 @@ h1:hover {font-size: 6vw;}
 .h1_position { position: absolute; bottom: 65%; width: 85%; margin-left: auto; margin-right: auto; z-index: 1; }
 
 .h1_position p { text-align: center; font-weight: bold;
-	letter-spacing: 0.7em;
+	letter-spacing: 0.7rem;
     font-size: 1.5vw;
     animation-name: pFadeIn;
     animation-duration: 10s;
 }
+
+p { letter-spacing: 0.2rem; font-size: 1.5vw; line-height: 170%;}
+
+p.button { text-align: center; font-size: x-large;  font-weight: bold; }
+p.button a:link, p.button a:visited { background-color: rgba(0,100,0,0.6); color: #ffff00; text-decoration: none; padding: 1rem 2rem 1rem 2rem; }
+p.button a:hover, p.button a:active { background-color: rgba(250,250,0,1); color: #440000; text-decoration: none; }
 
 div.countdown {
     left:0;
@@ -53,6 +59,8 @@ a:hover { color: #000000; text-decoration: underline overline; background-color:
 }
 
 .my_code { font-family: Consolas, "Liberation Mono", FreeMono, OCR, "OCR A Extended", "Lucida Sans Typewriter", "Courier New", Courier, monospace; }
+
+.my_under { text-decoration: yellow wavy underline; }
 
 .btm { position: absolute; bottom: 5%; width: 85%; margin-left: auto; margin-right: auto; }
 .btm p {opacity: .5; }
@@ -103,3 +111,13 @@ a:hover { color: #000000; text-decoration: underline overline; background-color:
         opacity: 1;
 	}
 }
+
+
+.no_print { }
+
+@media print {
+    .no_print {display:none;}
+    .NotHere {display:none;}
+    p.auxLinkBar {display:none;}
+}
+
