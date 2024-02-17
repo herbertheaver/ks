@@ -24,9 +24,10 @@ h1:hover {font-size: 6vw;}
     animation-duration: 10s;
 }
 
-h2 {background-color: rgba(255,200,0,0.3); font-size: 2.5vw; line-height: 170%; font-weight: bold; text-align: center }
+h2 {background-color: rgba(255,200,0,0.3); font-size: 2.5vw; line-height: 170%; font-weight: bold; text-align: center; padding-top: 1.5rem; padding-bottom: 1.5rem; }
 
-p { letter-spacing: 0.2rem; font-size: 1.5vw; line-height: 170%;}
+div.xbody { }
+div.xbody p { letter-spacing: 0.2rem; font-size: 1.5vw; line-height: 170%; margin-bottom: 1.9rem; }
 
 p.button { text-align: center; font-size: x-large;  font-weight: bold; }
 p.button a:link, p.button a:visited { background-color: rgba(0,100,0,0.6); color: #ffff00; text-decoration: none; padding: 1rem 2rem 1rem 2rem; }
