@@ -25,7 +25,7 @@ h2 { background-color: rgba(255,200,0,0.3); line-height: 170%; font-weight: bold
 
 div.xbody { }
 div.xbody p { letter-spacing: 0.2rem; line-height: 170%; margin-bottom: 1.9rem; }
-div.xbody p .xhl { font-weight: bold; background-color: rgba(180,0,0,0.4); }
+div.xbody p .xhl { font-weight: bold; background-color: rgba(160,0,0,0.5); padding-right: 0.4rem; padding-left: 0.4rem; }
 
 p.button { text-align: center; font-size: x-large;  font-weight: bold; }
 p.button a:link, p.button a:visited { background-color: rgba(0,100,0,0.6); color: #ffff00; text-decoration: none; padding: 1rem 2rem 1rem 2rem; }
@@ -65,7 +65,7 @@ a:hover { color: #000000; text-decoration: underline overline; background-color:
 
 .my_code { font-family: Consolas, "Liberation Mono", FreeMono, OCR, "OCR A Extended", "Lucida Sans Typewriter", "Courier New", Courier, monospace; }
 
-.my_under { text-decoration: yellow wavy underline; }
+.my_under { text-decoration: rgba(255,255,0,0.3) wavy underline; }
 
 .btm { position: absolute; bottom: 5%; width: 85%; margin-left: auto; margin-right: auto; }
 .btm p {opacity: .5; }
