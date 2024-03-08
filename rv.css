@@ -1,0 +1,222 @@
+html { height: 100%; }
+body { margin: 0; text-align: left; font-family: Arial, Geneva, Helvetica, Swiss, sans-serif; line-height: 150%; color: #ffffff;
+    background: #000000;
+    background-image: url("tile.jpg");
+    background-repeat: repeat;
+}
+
+h1 { font-weight: bold;
+    text-align: center;
+    animation-duration: 2s;
+    animation-name: xScale;
+    animation-timing-function: cubic-bezier(.71,.55,.62,1.57);
+}
+
+
+.h1_position { position: absolute; bottom: 65%; width: 85%; margin-left: auto; margin-right: auto; z-index: 1; }
+
+.h1_position p { text-align: center; font-weight: bold;
+	letter-spacing: 0.7rem;
+    animation-name: pFadeIn;
+    animation-duration: 10s;
+}
+
+h2 { background-color: rgba(255,200,0,0.1); line-height: 170%; font-weight: bold; text-align: center; padding-top: 1.2rem; padding-bottom: 1.2rem; }
+
+div.xbody { }
+div.xbody p { letter-spacing: 0.2rem; line-height: 170%; margin-bottom: 1.9rem; }
+div.xbody p .xhl { font-weight: bold; background-color: rgba(160,0,0,0.5); padding-right: 0.4rem; padding-left: 0.4rem; }
+
+div.burlap {
+    background-repeat: repeat-y; background-size: contain;
+    margin-top: 2rem; margin-bottom: 4rem;
+    padding-top: 2em; padding-bottom: 4em;
+}
+
+div.topphoto { background-image: url("web_image_1126w_text_ghosted.jpg"); background-size: cover; }
+div.topphoto img { width: 100%; height: auto; }
+div.parchment { background-color: rgba(255,255,250,0.8); color: #000000; }
+
+p.button { text-align: center; font-size: x-large;  font-weight: bold; letter-spacing: 0.2rem; }
+p.button a:link, p.button a:visited { background-color: rgba(0,100,0,0.8); color: #ffff00; text-decoration: none; padding: 1rem 2rem 1rem 2rem; }
+p.button a:hover, p.button a:active { background-color: rgba(250,250,0,1); color: #440000; text-decoration: none; }
+
+p.note { color: rgba(200,200,200,0.7); font-size: smaller; }
+
+div.countdown { width: 80%; 
+    left:0;
+    height:0;
+    position:relative;
+    padding-bottom:25%;
+    margin:0 auto
+}
+iframe.countdown_iframe { top:0; left:0; width:100%; position:absolute; border:0; overflow:hidden }
+                          
+img { border: 0; }
+a img { outline: none; }
+a:link { color: #7777ff; text-decoration: underline }
+a:active { color: #770000; text-decoration: none; background-color: #0000ff }
+a:visited { color: #7777ff; text-decoration: underline }
+a:hover { color: #000000; text-decoration: underline overline; background-color: #3333ff }
+
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 90%;
+}
+.left {
+  display: block;
+  margin-left: 0;
+  max-width: 90%;
+}
+
+.my_code { font-family: Consolas, "Liberation Mono", FreeMono, OCR, "OCR A Extended", "Lucida Sans Typewriter", "Courier New", Courier, monospace; }
+
+.my_under { text-decoration: rgba(255,205,0,0.6) wavy underline; }
+
+.btm { position: absolute; bottom: 5%; width: 85%; margin-left: auto; margin-right: auto; }
+.btm p {opacity: .5; }
+.btm p:hover {opacity: 1; }
+
+.badge { float: right; text-align: right; }
+.badge img { opacity: .2; }
+.badge img:hover { opacity: 1; }
+.badge a img { outline: none; }
+.badge a:link, .badge a:active, .badge a:visited, .badge a:hover{ color: rgba(0, 0, 0, 0); background-color: rgba(0, 0, 0, 0); text-decoration: none }
+
+
+@keyframes SolidChange {
+  0%, 100% {
+     background-color:  #000000;
+     color: #ffffff;
+  }
+  25% {
+     background-color: #440000;
+     color: #cccc00;
+  }
+  50% {
+     background-color: #000000;
+     color: #111111;
+  }
+  75% {
+     background-color: #000044;
+	 color: #000099
+  }
+}
+
+@keyframes xScale {
+    from {
+        opacity: 0;
+        transform: scale(.3, .3);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1, 1);
+    }
+}
+
+@keyframes pFadeIn {
+	0%, 25% {
+        opacity: 0;
+	}
+	100% {
+        opacity: 1;
+	}
+}
+
+
+.no_print { }
+
+@media print {
+    .no_print {display:none;}
+    .NotHere {display:none;}
+    p.auxLinkBar {display:none;}
+}
+
+/*   <a href="https://www.freevector.com/black-and-white-lace-border-vectors">FreeVector.com</a>   */
+/*
+Common Monitor Display Sizes     = = = = = = = = = = = = = = = = = = = = = = = =
+4k   16:9    3840 x 2160       max size for "Burlap & Lace" 1500    Max Size for image  1126   which is ??% of burlap
+FHD  16:9    1920 x 1080
+VGA   4:3     640 x 480
+*/
+
+/*   Responsive Text taken from h1.gapyoq                                  */
+/*   also  https://www.w3schools.com/howto/howto_css_responsive_text.asp   */
+
+/*   My Android Note 4 is 360 x 560 vertical or 640 x 280 horizontal       */
+/*   https://viewportsizes.com/mine/     https://dev.to/macargnelutti/using-css-viewport-units-for-font-sizes-can-be-tricky-3h31   */
+/*   https://blog.hubspot.com/website/responsive-text                      */
+
+/* If the screen size is 821px wide or more... */
+@media (min-width: 821px) {
+  body { margin: 1rem 1rem 1.5rem 1rem; }
+  div.burlap { background-image: url("burlap_n_lace_background_1500w.jpg"); padding-left: 13%; padding-right: 13%; max-width: 1000px; }
+  div.parchment { padding-left: 3rem; padding-right: 3rem;  }
+  div.countdown { width:90%; max-width:840px; max-height: 100px; }
+  iframe.countdown_iframe { height:80%; }
+  h1 { font-size: 5vw; }
+  h1:hover {font-size: 6vw;}
+  h2 { font-size: 3.5vw; }
+  div.xbody p { font-size: 2vw; }
+  .h1_position p { font-size: 1.5vw; }
+  .gMapF { width: 40%; float: right; margin-left: 1rem; }
+  .gMapB { display: none; }
+}
+/* If the screen size is 820px wide or less... */
+@media (max-width: 820px) {
+  /* For mobile phones: */
+  body { margin: 1rem 1rem 1.5rem 1rem; }
+  div.burlap { background-image: url("burlap_n_lace_background_1500w.jpg"); padding-left: 13%; padding-right: 13%; }
+  div.parchment { padding-left: 3rem; padding-right: 3rem;  }
+  div.countdown { width:80%; }
+  iframe.countdown_iframe { height:90%; }
+  h1 { font-size: 6.5vw; }
+  h1:hover {font-size: 7vw;}
+  h2 { font-size: 4vw; }
+  div.xbody p { font-size: 2.5vw; }
+  .h1_position p { font-size: 2.5vw; }
+  .gMapF { display: none; }
+  .gMapB { width: 90%; float: none; }
+}
+/* If the screen size is 599px wide or less... */
+@media (max-width: 599px) {
+  /* For mobile phones: */
+  body { margin: 1rem 0rem 1.5rem 0rem; }
+  div.burlap { background-image: url("burlap_n_lace_background_1500w.jpg"); padding-left: 13%; padding-right: 13%; }
+  div.parchment { padding-left: 2rem; padding-right: 2rem;  }
+  div.countdown { width:90%; }
+  iframe.countdown_iframe { height:100%; }
+  h1 { font-size: 8vw; }
+  h1:hover {font-size: 9vw;}
+  h2 { font-size: 6vw; }
+  div.xbody p { font-size: 4vw; }
+  .h1_position p { font-size: 4vw; }
+  .gMapF { display: none; }
+  .gMapB { width: 100%; float: none; }
+}
+@media (max-width: 480px) {
+  /* For mobile phones: */
+  body { margin: 0rem 0rem 0rem 0rem; }
+  div.burlap { background-image: url("burlap_NO_lace_background_1000w.jpg"); padding-left: 7%; padding-right: 7%; }
+  div.parchment { padding-left: 2rem; padding-right: 2rem;  }
+  div.countdown { width:95%; }
+  iframe.countdown_iframe { height:100%; }
+  h1 { font-size: 9vw; }
+  h1:hover {font-size: 10vw;}
+  h2 { font-size: 7vw; }
+  div.xbody p { font-size: 5vw; }
+  .h1_position p { font-size: 5vw; }
+  .gMap { width: 100%; float: none; }
+}
+
+@media print {
+    .noPrint { display: none; }
+}
+@media not print {
+    .PrintOnly { display: none; }
+}
+
+

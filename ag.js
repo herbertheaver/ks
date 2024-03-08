@@ -1,3 +1,15 @@
+/*    INVITATION NOTES
+Fonts    = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+Photo Font: Everyday Ghosts
+Invitation Script Font: Viner Hand ITC
+
+
+Common Monitor Display Sizes     = = = = = = = = = = = = = = = = = = = = = = = =
+4k   16:9    3840 x 2160
+FHD  16:9    1920 x 1080
+VGA   4:3     640 x 480
+*/
+
 var now = new Date();
 var rawtime = now.toString();
 var localtime = now.toLocaleString();
